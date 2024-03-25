@@ -23,6 +23,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(new Intent(SplashActivity.this,CreateAccountActivity.class));
             }
         },1000);//After 1 second of loading it will go to the main activity
+        //Waiting for other config
 
     }
 }
