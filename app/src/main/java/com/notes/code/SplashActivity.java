@@ -17,12 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashActivity.this,CreateAccountActivity.class));
-            }
-        },1000);//After 1 second of loading it will go to the main activity
+        new Handler().postDelayed(() -> startActivity(new Intent(SplashActivity.this,CreateAccountActivity.class)),1000);//After 1 second of loading it will go to the main activity
         //Waiting for other config
 
     }
